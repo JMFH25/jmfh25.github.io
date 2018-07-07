@@ -1,0 +1,49 @@
+*{
+  font-family: 'Dosis', sans-serif;
+}
+
+.comp-tower{
+  width: 400px;
+  height: auto;
+}
+.align-section{
+  max-width: 700px;
+  margin: 16px auto;
+  text-align: left;
+}
+.align-center{
+  text-align: center;
+}
+.text-size{
+  font-size: 22px;
+}
+
+.extra-width{
+  max-width: 900px;
+}
+.flex-container{
+  flex-wrap: wrap;
+  display:flex;
+  flex-direction: row;
+}
+
+.comp-part{
+  width: 250px;
+  height: 250px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.no-bullet{
+  list-style-type: none;
+  padding: 0;
+}
+
+.part-img{
+  width: 200px;
+  height: auto;
+}
+.part-label{
+  display: block;
+  margin-bottom: 5px;
+}
