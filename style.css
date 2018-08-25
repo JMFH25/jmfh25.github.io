@@ -52,3 +52,19 @@
   width: 500px;
   height: auto;
 }
+
+.points_width{
+  width: 200px;
+}
+
+.align-boxes{
+  width: 400px;
+  margin: 16px auto;
+  text-align: left;
+}
+
+.fix{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
