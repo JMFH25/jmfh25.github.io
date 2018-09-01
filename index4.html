@@ -3,6 +3,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript" src="./script.js"></script>
   <title>Price</title>
 </head>
 <body background="./images/Background.jpg">
@@ -12,23 +13,23 @@
   <legend>CPU</legend>
 
   <div>
-    <input type="checkbox" id="intel-core-amazon" name="CPU" value="4" unchecked/>
-    <label for="intel-core-amazon">Intel Core i3 8100 (Amazon)</label>
+    <input type="checkbox" id="intel-core-amazon" name="CPU" value="109.99" onclick="Updatecost()" unchecked/>
+    <label for="intel-core-amazon">Intel Core i3 8100 (Amazon) = $109.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="intel-core-newegg" name="CPU" value="5" unchecked/>
-    <label for="intel-core-newegg">Intel Core i3 8100 (Newegg)</label>
+    <input type="checkbox" id="intel-core-newegg" name="CPU" value="119.99" onclick="Updatecost()" unchecked/>
+    <label for="intel-core-newegg">Intel Core i3 8100 (Newegg) = $119.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="intel-core-outletpc" name="CPU" value="6" unchecked/>
-    <label for="intel-core-outletpc">Intel Core i3 8100 (Outlet PC)</label>
+    <input type="checkbox" id="intel-core-outletpc" name="CPU" value="118.80" onclick="Updatecost()" unchecked/>
+    <label for="intel-core-outletpc">Intel Core i3 8100 (Outlet PC) = $118.80</label>
   </div>
 
   <div>
-    <input type="checkbox" id="intel-core-superbiiz" name="CPU" value="5" unchecked/>
-    <label for="intel-core-superbiiz">Intel Core i3 8100 (Superbiiz)</label>
+    <input type="checkbox" id="intel-core-superbiiz" name="CPU" value="133.99" onclick="Updatecost()" unchecked/>
+    <label for="intel-core-superbiiz">Intel Core i3 8100 (Superbiiz) = $113.99</label>
   </div>
 
 </fieldset>
@@ -37,23 +38,23 @@
   <legend>CPU Fan</legend>
 
   <div>
-    <input type="checkbox" id="Hyper-EVO-212-amazon" name="CPU Fan" value="30" unchecked/>
-    <label for="Hyper-EVO-212-amazon">Hyper Evo 212 (Amazon)</label>
+    <input type="checkbox" id="Hyper-EVO-212-amazon" name="CPU Fan" value="29.99" onclick="Updatecost()" unchecked/>
+    <label for="Hyper-EVO-212-amazon">Hyper Evo 212 (Amazon) = $29.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Hyper-EVO-212-newegg" name="CPU Fan" value="40" unchecked/>
-    <label for="Hyper-EVO-212-newegg">Hyper Evo 212 (Newegg)</label>
+    <input type="checkbox" id="Hyper-EVO-212-newegg" name="CPU Fan" value="37.99" onclick="Updatecost()" unchecked/>
+    <label for="Hyper-EVO-212-newegg">Hyper Evo 212 (Newegg) = $37.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Hyper-EVO-212-outletpc" name="CPU Fan" value="50" unchecked/>
-    <label for="Hyper-EVO-212-outletpc">Hyper Evo 212 (Outlet PC)</label>
+    <input type="checkbox" id="Hyper-EVO-212-outletpc" name="CPU Fan" value="37.89" onclick="Updatecost()" unchecked/>
+    <label for="Hyper-EVO-212-outletpc">Hyper Evo 212 (Outlet PC) = $37.89</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Hyper-EVO-212-superbiiz" name="CPU Fan" value="60" unchecked/>
-    <label for="Hyper-EVO-212-superbiiz">Hyper Evo 212 (superbiiz) - $60</label>
+    <input type="checkbox" id="Hyper-EVO-212-superbiiz" name="CPU Fan" value="29.49" onclick="Updatecost()" unchecked/>
+    <label for="Hyper-EVO-212-superbiiz">Hyper Evo 212 (superbiiz) = $29.99</label>
   </div>
 
 </fieldset>
@@ -231,7 +232,7 @@
   </main>
 
   <div class="text-size align-center">
-    Total:<input type="text" size="5" name="Total" value="0"/>
+    Total: <input type="text" size="5" id="total1" name="total" value="0"/>
   </div>
 
 </body>
