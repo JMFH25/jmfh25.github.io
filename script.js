@@ -4,9 +4,11 @@ function Updatecost()
   var sum = 0;
   var cpu = document.getElementsByName('CPU');
   var fan = document.getElementsByName('CPU Fan');
-  var moth= document.getElementsByName('Motherboard');
+  var moth = document.getElementsByName('Motherboard');
+  var compcase = document.getElementsByName('Case');
+  var gpu = document.getElementsByName('GPU');
 
-  for (i=0;i<cpu.length;i++)
+  for (var i=0;i<cpu.length;i++)
   {
     if (cpu[i].checked)
     {
@@ -14,7 +16,7 @@ function Updatecost()
     }
   }
 
-  for(i=0; i<fan.length; i++)
+  for(var i=0; i<fan.length; i++)
   {
     if(fan[i].checked)
     {
@@ -22,11 +24,27 @@ function Updatecost()
     }
   }
 
-  for(i=0; i<moth.length; i++)
+  for(var i=0; i<moth.length; i++)
   {
     if(moth[i].checked)
     {
       sum = sum+parseFloat(moth[i].value)
+    }
+  }
+
+  for(var i=0; i<compcase.length; i++)
+  {
+    if(compcase[i].checked)
+    {
+      sum = sum+parseFloat(compcase[i].value)
+    }
+  }
+
+  for(var i=0; i<gpu.length; i++)
+  {
+    if(gpu[i].checked)
+    {
+      sum = sum+parseFloat(gpu[i].value)
     }
   }
     document.getElementById('total1').value=sum;
