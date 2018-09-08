@@ -7,6 +7,10 @@ function Updatecost()
   var moth = document.getElementsByName('Motherboard');
   var compcase = document.getElementsByName('Case');
   var gpu = document.getElementsByName('GPU');
+  var hdd = document.getElementsByName('HDD');
+  var ram = document.getElementsByName('RAM');
+  var psu = document.getElementsByName('PSU');
+  var od = document.getElementsByName('CD/DVD');
 
   for (var i=0;i<cpu.length;i++)
   {
@@ -45,6 +49,38 @@ function Updatecost()
     if(gpu[i].checked)
     {
       sum = sum+parseFloat(gpu[i].value)
+    }
+  }
+
+  for(var i=0; i<hdd.length; i++)
+  {
+    if(hdd[i].checked)
+    {
+      sum = sum+parseFloat(hdd[i].value)
+    }
+  }
+
+  for(var i=0; i<ram.length; i++)
+  {
+    if(ram[i].checked)
+    {
+      sum = sum+parseFloat(ram[i].value)
+    }
+  }
+
+  for(var i=0; i<psu.length; i++)
+  {
+    if(psu[i].checked)
+    {
+      sum = sum+parseFloat(psu[i].value)
+    }
+  }
+
+  for(var i=0; i<od.length; i++)
+  {
+    if(od[i].checked)
+    {
+      sum = sum+parseFloat(od[i].value)
     }
   }
     document.getElementById('total1').value=sum;

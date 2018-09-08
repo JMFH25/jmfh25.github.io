@@ -70,9 +70,11 @@
 }
 
 .navbar{
-  overflow: hidden;
   background-color: #333;
   font-family: arial;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar a{
@@ -94,7 +96,6 @@
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -128,4 +129,27 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.textbox{
+  height: 30px;
+  width: 80px;
+  font-size: 20px;
+}
+
+.btnp{
+  padding: 14px 16px;
+}
+
+.maradd{
+  margin: 70px;
+}
+
+.btmnavbar{
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0%;
+  width: 100%;
 }

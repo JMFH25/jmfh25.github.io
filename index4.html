@@ -6,7 +6,20 @@
   <script type="text/javascript" src="./script.js"></script>
   <title>Price</title>
 </head>
+
+<div class="navbar">
+  <a href="./index.html">Home</a>
+  <a href="./index2.html">Tools & Components</a>
+  <a href="./index3.html">How to assemble</a>
+</div>
+
 <body background="./images/Background.jpg">
+
+  <div class="maradd">
+
+<h1 class="align-center">Price Comparison</h1>
+    <p class="align-section text-size">Here is a list of computer components with there prices. <strong>NOTE:</strong> prices fluctuate and may change to what is posted so its best to double check. what this should do is when you check the item it should add up and show the total value on the bottom of the page. </p>
+
   <main class="align-center fix">
 
 <fieldset class="text-size align-boxes">
@@ -88,22 +101,22 @@
   <legend>Case</legend>
 
   <div>
-    <input type="checkbox" id="Corsair-200R-amazon" name="Case" value="30" unchecked/>
-    <label for="Corsair-200R-amazon">Corsair 200R ATX Mid Tower Case (amazon)</label>
+    <input type="checkbox" id="Corsair-200R-amazon" name="Case" value="65.99" onclick="Updatecost()" unchecked/>
+    <label for="Corsair-200R-amazon">Corsair 200R ATX Mid Tower Case (amazon) = $65.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Corsair-200R-newegg" name="Case" value="30" unchecked/>
-    <label for="Corsair-200R-newegg">Corsair 200R ATX Mid Tower Case (newegg)</label>
+    <input type="checkbox" id="Corsair-200R-newegg" name="Case" value="67.98" onclick="Updatecost()" unchecked/>
+    <label for="Corsair-200R-newegg">Corsair 200R ATX Mid Tower Case (newegg) = $67.96</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Corsair-200R-outletpc" name="Case" value="30" unchecked/>
-    <label for="Corsair-200R-outletpc">Corsair 200R ATX Mid Tower Case (Outlet PC)</label>
+    <input type="checkbox" id="Corsair-200R-outletpc" name="Case" value="75.49" onclick="Updatecost()" unchecked/>
+    <label for="Corsair-200R-outletpc">Corsair 200R ATX Mid Tower Case (Outlet PC) = $75.49</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Corsair-200R-superbiiz" name="Case" value="30" unchecked/>
+    <input type="checkbox" id="Corsair-200R-superbiiz" name="Case" value="0" onclick="Updatecost()" unchecked/>
     <label for="Corsair-200R-superbiiz">Corsair 200R ATX Mid Tower Case (Superbiiz)</label>
   </div>
 
@@ -113,22 +126,22 @@
   <legend>GPU</legend>
 
   <div>
-    <input type="checkbox" id="EVGA-GTX-1050Ti-amazon" name="GPU" value="0" unchecked/>
-    <label for="EVGA-GTX-1050Ti-amazon">EVGA GTX 1050Ti (Amazon)</label>
+    <input type="checkbox" id="EVGA-GTX-1050Ti-amazon" name="GPU" value="189.99" onclick="Updatecost()" unchecked/>
+    <label for="EVGA-GTX-1050Ti-amazon">EVGA GTX 1050Ti (Amazon) = $189.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="EVGA-GTX-1050Ti-Newegg" name="GPU" value="0" unchecked/>
-    <label for="EVGA-GTX-1050Ti-Newegg">EVGA GTX 1050Ti (Newegg)</label>
+    <input type="checkbox" id="EVGA-GTX-1050Ti-Newegg" name="GPU" value="189.99" onclick="Updatecost()" unchecked/>
+    <label for="EVGA-GTX-1050Ti-Newegg">EVGA GTX 1050Ti (Newegg) = $189.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="EVGA-GTX-1050Ti-outletpc" name="GPU" value="0" unchecked/>
-    <label for="EVGA-GTX-1050Ti-outletpc">EVGA GTX 1050Ti (Outlet PC)</label>
+    <input type="checkbox" id="EVGA-GTX-1050Ti-outletpc" name="GPU" value="189.89" onclick="Updatecost()" unchecked/>
+    <label for="EVGA-GTX-1050Ti-outletpc">EVGA GTX 1050Ti (Outlet PC) = $189.89</label>
   </div>
 
   <div>
-    <input type="checkbox" id="EVGA-GTX-1050Ti-superbiiz" name="GPU" value="0" unchecked/>
+    <input type="checkbox" id="EVGA-GTX-1050Ti-superbiiz" name="GPU" value="0" onclick="Updatecost()" unchecked/>
     <label for="EVGA-GTX-1050Ti-superbiiz">EVGA GTX 1050Ti (Superbiiz)</label>
   </div>
 </fieldset>
@@ -137,22 +150,22 @@
   <legend>HDD</legend>
 
   <div>
-    <input type="checkbox" id="Seagate-Barracuda-amazon" name="HDD" value="0" unchecked/>
-    <label for="Seagate-Barracuda-amazon">Seagate Barracuda 1TB HDD(Amazon)</label>
+    <input type="checkbox" id="Seagate-Barracuda-amazon" name="HDD" value="44.95" onclick="Updatecost()" unchecked/>
+    <label for="Seagate-Barracuda-amazon">Seagate Barracuda 1TB HDD(Amazon) = $44.95</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Seagate-Barracuda-newegg" name="HDD" value="0" unchecked/>
-    <label for="Seagate-Barracuda-newegg">Seagate Barracuda 1TB HDD(Newegg)</label>
+    <input type="checkbox" id="Seagate-Barracuda-newegg" name="HDD" value="44.99" onclick="Updatecost()" unchecked/>
+    <label for="Seagate-Barracuda-newegg">Seagate Barracuda 1TB HDD(Newegg) = $44.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Seagate-Barracuda-outletpc" name="HDD" value="0" unchecked/>
-    <label for="Seagate-Barracuda-outletpc">Seagate Barracuda 1TB HDD(Outlet PC)</label>
+    <input type="checkbox" id="Seagate-Barracuda-outletpc" name="HDD" value="47.40" onclick="Updatecost()" unchecked/>
+    <label for="Seagate-Barracuda-outletpc">Seagate Barracuda 1TB HDD(Outlet PC) = $47.40</label>
   </div>
 
   <div>
-    <input type="checkbox" id="Seagate-Barracuda-superbiiz" name="HDD" value="0" unchecked/>
+    <input type="checkbox" id="Seagate-Barracuda-superbiiz" name="HDD" value="0" onclick="Updatecost()" unchecked/>
     <label for="Seagate-Barracuda-superbiiz">Seagate Barracuda 1TB HDD(Superbiiz)</label>
   </div>
 </fieldset>
@@ -161,22 +174,22 @@
   <legend>RAM</legend>
 
   <div>
-    <input type="checkbox" id="corsair-vengance-lpx-amazon" name="RAM" value="0" unchecked/>
-    <label for="corsair-vengance-lpx-amazon">Corsair vengance LPX 8GB (Amazon)</label>
+    <input type="checkbox" id="corsair-vengance-lpx-amazon" name="RAM" value="72.99" onclick="Updatecost()" unchecked/>
+    <label for="corsair-vengance-lpx-amazon">Corsair vengance LPX 8GB (Amazon) = $72.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="corsair-vengance-lpx-newegg" name="RAM" value="0" unchecked/>
-    <label for="corsair-vengance-lpx-newegg">Corsair vengance LPX 8GB(Newegg)</label>
+    <input type="checkbox" id="corsair-vengance-lpx-newegg" name="RAM" value="72.99" onclick="Updatecost()" unchecked/>
+    <label for="corsair-vengance-lpx-newegg">Corsair vengance LPX 8GB(Newegg) = $72.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="corsair-vengance-lpx-outletpc" name="RAM" value="0" unchecked/>
+    <input type="checkbox" id="corsair-vengance-lpx-outletpc" name="RAM" value="0" onclick="Updatecost()" unchecked/>
     <label for="corsair-vengance-lpx-outletpc">Corsair vengance LPX 8GB(Outlet PC)</label>
   </div>
 
   <div>
-    <input type="checkbox" id="corsair-vengance-lpx-superbiiz" name="RAM" value="0" unchecked/>
+    <input type="checkbox" id="corsair-vengance-lpx-superbiiz" name="RAM" value="0" onclick="Updatecost()" unchecked/>
     <label for="corsair-vengance-lpx-superbiiz">Corsair vengance LPX 8GB(Superbiiz)</label>
   </div>
 </fieldset>
@@ -185,22 +198,22 @@
   <legend>PSU</legend>
 
   <div>
-    <input type="checkbox" id="corsair-psu-amazon" name="PSU" value="0" unchecked/>
-    <label for="corsair-psu-amazon">Corsair CX 450W(Amazon)</label>
+    <input type="checkbox" id="corsair-psu-amazon" name="PSU" value="39.99" onclick="Updatecost()" unchecked/>
+    <label for="corsair-psu-amazon">Corsair CX 450W(Amazon) = $39.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="corsair-psu-newegg" name="PSU" value="0" unchecked/>
-    <label for="corsair-psu-newegg">Corsair CX 450W(Newegg)</label>
+    <input type="checkbox" id="corsair-psu-newegg" name="PSU" value="39.99" onclick="Updatecost()" unchecked/>
+    <label for="corsair-psu-newegg">Corsair CX 450W(Newegg) = $39.99</label>
   </div>
 
   <div>
-    <input type="checkbox" id="corsair-psu-outletpc" name="PSU" value="0" unchecked/>
-    <label for="corsair-psu-outletpc">Corsair CX 450W(Outlet PC)</label>
+    <input type="checkbox" id="corsair-psu-outletpc" name="PSU" value="44.90" onclick="Updatecost()" unchecked/>
+    <label for="corsair-psu-outletpc">Corsair CX 450W(Outlet PC) = $44.90</label>
   </div>
 
   <div>
-    <input type="checkbox" id="corsair-psu-superbiiz" name="PSU" value="0" unchecked/>
+    <input type="checkbox" id="corsair-psu-superbiiz" name="PSU" value="0" onclick="Updatecost()" unchecked/>
     <label for="corsair-psu-superbiiz">Corsair CX 450W(Superbiiz)</label>
   </div>
 </fieldset>
@@ -209,31 +222,35 @@
   <legend>Optical Drives</legend>
 
   <div>
-    <input type="checkbox" id="OD-amazon" name="CD/DVD" value="0" unchecked/>
-    <label for="OD-amazon">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Amazon)</label>
+    <input type="checkbox" id="OD-amazon" name="CD/DVD" value="21.40" onclick="Updatecost()" unchecked/>
+    <label for="OD-amazon">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Amazon) = $21.40</label>
   </div>
 
   <div>
-    <input type="checkbox" id="OD-Newegg" name="CD/DVD" value="0" unchecked/>
-    <label for="OD-Newegg">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Newegg)</label>
+    <input type="checkbox" id="OD-Newegg" name="CD/DVD" value="22.95" onclick="Updatecost()" unchecked/>
+    <label for="OD-Newegg">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Newegg) = $22.95</label>
   </div>
 
   <div>
-    <input type="checkbox" id="OD-outletpc" name="CD/DVD" value="0" unchecked/>
-    <label for="OD-outletpc">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Outlet PC)</label>
+    <input type="checkbox" id="OD-outletpc" name="CD/DVD" value="21.30" onclick="Updatecost()" unchecked/>
+    <label for="OD-outletpc">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Outlet PC) = $21.30</label>
   </div>
 
   <div>
-    <input type="checkbox" id="OD-superbiiz" name="CD/DVD" value="0" unchecked/>
+    <input type="checkbox" id="OD-superbiiz" name="CD/DVD" value="0" onclick="Updatecost()" unchecked/>
     <label for="OD-superbiiz">Asus DRW-24B1ST/BLK/B/AS DVD/CD Writer(Superbiiz)</label>
   </div>
 </fieldset>
 
   </main>
 
-  <div class="text-size align-center">
-    Total: <input type="text" size="5" id="total1" name="total" value="0"/>
+  <div class="text-size align-center btmnavbar">
+    Total: <span>$ </span><input type="text" size="10" id="total1" name="total" value="0" class="textbox" />
   </div>
+
+  <h2 class="align-center"><span><a href="./index.html"><---Back</a></span></h2>
+
+</div>
 
 </body>
 </html>
