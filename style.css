@@ -75,6 +75,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  right: 0;
 }
 
 .navbar a{
@@ -150,6 +151,15 @@
   color: white;
   position: fixed;
   bottom: 0;
-  right: 0%;
+  right: 0;
   width: 100%;
+}
+
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
 }
