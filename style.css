@@ -163,3 +163,7 @@ h2::before {
   visibility: hidden;
   pointer-events: none;
 }
+
+.background{
+  background-color: white;
+}
