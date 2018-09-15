@@ -1,5 +1,5 @@
 *{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .comp-tower{
@@ -165,5 +165,5 @@ h2::before {
 }
 
 .background{
-  background-color: white;
+  background-color: #D8D8D8;
 }
